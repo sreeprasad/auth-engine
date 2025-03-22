@@ -45,3 +45,29 @@ request := auth.Request{
 
 result := auth.Evaluate(policies, &request)
 // Here the result will be AllowAccess, ExplicitDeny, or ImplicitDeny
+```
+
+## Getting Started
+```bash
+# Clone the repository
+git clone https://github.com/sreeprasad/auth-engine.git
+
+# Build the project
+make build
+
+# Run tests
+make test
+```
+
+## Project Structure
+```bash 
+auth/ - Core authorization engine package
+  types.go - Data model definitions
+  evaluation.go - Policy evaluation logic
+  matching.go - Wildcard pattern matching impl
+main.go - Example usage
+```
+
+
+## License
+MIT
